@@ -41,7 +41,7 @@ public class StudentDAO {
                 student.setCourse(resultSet.getString("course"));
 
                 // Display the data
-                student.toString();
+                System.out.println( "Roll Number: "+student.getS_id()+" Name: "+student.getS_name()+" Age: "+student.getAge()+ " Course: "+student.getCourse());
             }
        } finally {
             // Close ResultSet and Statement
